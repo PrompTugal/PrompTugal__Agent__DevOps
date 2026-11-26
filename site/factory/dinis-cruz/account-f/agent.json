@@ -22,7 +22,7 @@
  "timeline": [
   {
    "at": "2026-11-26T02:37Z",
-   "event": "full pass: 764 runs 21-25 Nov, 9 red (last 24 Nov), median 8.6 to 10.5 min against 12 min job timeouts; schedule.json stale; findings written"
+   "event": "full pass: 764 runs 21-25 Nov, 9 red (last 24 Nov), median 8.6 to 10.5 min (each job has a 12 min limit, takes about 5); schedule.json stale; findings written"
   },
   {
    "at": "2026-11-26T02:27Z",
