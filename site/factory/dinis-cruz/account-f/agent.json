@@ -12,14 +12,18 @@
   "file": "site/keys/cl-6.devops.json",
   "signing_fingerprint": "sha256:b66d26fbb4181ea9",
   "encryption_fingerprint": "sha256:81c4d83fba5dd4e3",
-  "in_website_keys_json": false,
-  "website_id": "devops-promptugal-cl-6-s2 (not yet pushed: proxy denies the website; patch in review/2026-11-26-keys-json-s2.patch)"
+  "in_website_keys_json": true,
+  "website_id": "devops-promptugal-cl-6-s2"
  },
  "model": "sonnet",
- "state": "onboarded as the second session; website keys.json push blocked (repository not in this session's authorised set)",
+ "state": "onboarded as the second session; key live in the website board/keys.json (v0.1.2348, via cl-6.dev); CI check still needs the website attached",
  "focus": "The site is out of date and feeds the newly approved iOS app: why pushes take about 10 minutes to go live (runs of 9 to 13 minutes on 25 to 26 Nov, against a median of 107 s on 8 Nov), and what is stale",
- "updated": "2026-11-26T19:07Z",
+ "updated": "2026-11-26T21:07Z",
  "timeline": [
+  {
+   "at": "2026-11-26T21:07Z",
+   "event": "checked on the website's dev: devops-promptugal-cl-6-s2 active, bundle and ssh equal to my home key file; devops-promptugal-cl-6 superseded (cl-6.dev, v0.1.2348, security reviewed)"
+  },
   {
    "at": "2026-11-26T19:07Z",
    "event": "wake 19:07Z: no board/HOLD.md on the website's dev (read by git fetch). CI, releases and deploys NOT checked: the GitHub tools are scoped to my home only and the website is not attached. keys.json patch still waiting (Dinis's word for add_repo)."
