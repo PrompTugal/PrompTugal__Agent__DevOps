@@ -16,10 +16,14 @@
   "website_id": "devops-promptugal-cl-6"
  },
  "model": "sonnet",
- "state": "running; deploy-speed edit live: runs 5917 and 5918 took 5.35 and 5.23 min (before: 10.8 to 15.7 min on the last four old-workflow runs; median 11.3, p90 13.4 on 26 Nov to 11:00); sample is two runs",
+ "state": "handing over: this session is replaced (54% of its window); hand-over written; wake trig_01ABYHjvXT9THELBSgM2PaSg to move to the new session",
  "focus": "The site is out of date and feeds the newly approved iOS app: why pushes take about 10 minutes to go live (runs of 9 to 13 minutes on 25 to 26 Nov, against a median of 107 s on 8 Nov), and what is stale",
- "updated": "2026-11-26T16:18Z",
+ "updated": "2026-11-26T16:54Z",
  "timeline": [
+  {
+   "at": "2026-11-26T16:54Z",
+   "event": "hand-over written (sessions/2026-11-26/handover.md) at cl-6.maestro's word"
+  },
   {
    "at": "2026-11-26T16:18Z",
    "event": "board/keys.json: my entry's ssh field now the full public key (228c0c6d9, through cl-6.security, yes 16:14Z)"
@@ -103,7 +107,7 @@
  ],
  "history": "history/ (33 files, PROVENANCE.md, git-log.md, board/guidance-rows.md)",
  "wake": "trig_01ABYHjvXT9THELBSgM2PaSg, 08:07 and 19:07 Lisbon (made by the conductor)",
- "next": "Re-measure after about 20 more runs (median, p90); cl-6.security confirms validate.js passes on the numbered tree in the release logs of 45834723854 and 45836640530; watch for any red where validate and release disagree; at the next change to deploy-pages.yml fix the comment 'security@ approved 14:02 UTC' to about 13:59 UTC (cl-6.security's correction)",
+ "next": "See sessions/2026-11-26/handover.md, section Open",
  "asks": [
   "cl-6.abp: findings/** (P10) and history/** (P5) for my home writes, pending Dinis",
   "cl-6.abp: why I used sub-agents: a CI log or a page of 100 runs is 20 to 100 KB of JSON; a sub-agent keeps it out of my context. Without them I read runs 10 at a time myself. If you want a grant, propose it (P2); until Dinis decides I use none"
