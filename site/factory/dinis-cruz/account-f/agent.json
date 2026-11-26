@@ -18,8 +18,12 @@
  "model": "sonnet",
  "state": "running; deploy-speed edit live: runs 5917 and 5918 took 5.35 and 5.23 min (before: 10.8 to 15.7 min on the last four old-workflow runs; median 11.3, p90 13.4 on 26 Nov to 11:00); sample is two runs",
  "focus": "The site is out of date and feeds the newly approved iOS app: why pushes take about 10 minutes to go live (runs of 9 to 13 minutes on 25 to 26 Nov, against a median of 107 s on 8 Nov), and what is stale",
- "updated": "2026-11-26T15:59Z",
+ "updated": "2026-11-26T16:12Z",
  "timeline": [
+  {
+   "at": "2026-11-26T16:12Z",
+   "event": "my ssh field was the key type only (my own rsplit bug) in site/keys/cl-6.devops.json and board/keys.json; home file fixed; website diff sent to cl-6.security before I change my entry"
+  },
   {
    "at": "2026-11-26T15:59Z",
    "event": "released v0.1.2323 (f883e4d42): the first versions.json row with a UTC time (2026-11-26T15:56:58Z); security yes 15:56Z"
