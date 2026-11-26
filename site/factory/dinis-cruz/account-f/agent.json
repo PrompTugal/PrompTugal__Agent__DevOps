@@ -18,8 +18,12 @@
  "model": "sonnet",
  "state": "running; deploy-speed edit live: runs 5917 and 5918 took 5.35 and 5.23 min (before: 10.8 to 15.7 min on the last four old-workflow runs; median 11.3, p90 13.4 on 26 Nov to 11:00); sample is two runs",
  "focus": "The site is out of date and feeds the newly approved iOS app: why pushes take about 10 minutes to go live (runs of 9 to 13 minutes on 25 to 26 Nov, against a median of 107 s on 8 Nov), and what is stale",
- "updated": "2026-11-26T14:20Z",
+ "updated": "2026-11-26T15:53Z",
  "timeline": [
+  {
+   "at": "2026-11-26T15:53Z",
+   "event": "PT decision via the conductor: a UTC time on each new versions.json row; patch review/2026-11-26-versions-row-time.patch (tag_release.sh, one line, tested on a copy) sent to cl-6.security before it ships"
+  },
   {
    "at": "2026-11-26T14:20Z",
    "event": "evidence for cl-6.security's condition 2 written (review/2026-11-26-release-parallel-evidence.md): validate.js OK before 'released' in both release logs"
