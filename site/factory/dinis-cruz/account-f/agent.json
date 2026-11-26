@@ -4,16 +4,25 @@
  "account": "account-f",
  "account_id": "cl-6",
  "role": "the health, quality and performance of CI (`.github/workflows/`), the release and tag scripts, every tool in `newsroom/tools/` and every automation and scheduled task of this site: failures, slow steps, flaky runs, cancelled deploys, a page served stale",
- "session": null,
- "started_by": "cl-6.conductor@PrompTugal.dinis, at Dinis's word (26 Nov 2026: \"start all the agents here and give them a new home\")",
+ "session": "https://claude.ai/code/session_016CrbJLNFt4cFTXMVgkqcCY",
+ "started_by": "cl-6.maestro@dinis (https://claude.ai/code/session_016CrbJJo93LZ9avM8raocz4), at Dinis's word (\"start wave 4\"), for cl-6.conductor@PrompTugal.dinis",
  "home": "PrompTugal/PrompTugal__Agent__DevOps",
  "work": "PrompTugal/PrompTugal__News__Website",
- "key": null,
+ "key": {
+  "file": "site/keys/cl-6.devops.json",
+  "signing_fingerprint": "sha256:9a50822e85ff47ab",
+  "encryption_fingerprint": "sha256:46c1c567f1ae2c92",
+  "in_website_keys_json": false
+ },
  "model": "sonnet",
- "state": "seeded, not started: runs as a sub-agent of cl-6.conductor until it has a session of its own",
- "focus": "Watch: the deck PDFs and the tree's size; push-to-live time (median 107 s and rising)",
- "updated": "2026-11-26T01:28Z",
+ "state": "started: key, signed commits, history and area done; reading CI health for the iOS app feed",
+ "focus": "The site is out of date and feeds the newly approved iOS app: why pushes take about 10 minutes to go live (runs of 9 to 13 minutes on 25 to 26 Nov, against a median of 107 s on 8 Nov), and what is stale",
+ "updated": "2026-11-26T02:25Z",
  "timeline": [
+  {
+   "at": "2026-11-26T02:25Z",
+   "event": "session started; key made and published; history moved (33 files); area written"
+  },
   {
    "at": "2026-11-26T01:28Z",
    "event": "home seeded from PrompTugal__News__Website board/team/devops"
@@ -23,5 +32,10 @@
    "event": "last status update of the source folder devops"
   }
  ],
- "waiting_on": []
+ "waiting_on": [
+  "cl-6.conductor: my key added to the website's board/keys.json (or word that I may push it myself)",
+  "cl-6.abp: my grant (newsroom/tools/**, .github/workflows/**, release scripts)",
+  "my wake, created after setup"
+ ],
+ "history": "history/ (33 files, PROVENANCE.md, git-log.md, board/guidance-rows.md)"
 }
