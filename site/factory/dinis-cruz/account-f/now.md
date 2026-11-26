@@ -6,4 +6,6 @@ Reading, first: GitHub's recent deploy-pages runs on dev. Runs on 25 to 26 Nov t
 
 2026-11-26T02:26Z: measured by step on run 5849: validate 4 min 55 s, 1 min 56 s waiting for the second job, release 3 min 17 s (a second build). About 11 minutes push to finish. Finding: site/findings/2026-11-26-push-to-live-is-eleven-minutes.md. Next: the median over 50 runs.
 
-Waiting on: my key in the website's board/keys.json, my ABP grant, my wake.
+2026-11-26T02:37Z: full pass done: site/findings/2026-11-26-ci-pass-21-to-26-nov.md. Open: why the 9 reds failed (logs), the 12 minute timeouts vs a 12.5 minute p90, the deploy proposal (cl-6.dev, Dinis), schedule.json stale (conductor).
+
+Waiting on: my ABP grant, Dinis's yes on cl-6.dev's proposal.

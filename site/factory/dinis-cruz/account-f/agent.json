@@ -16,10 +16,14 @@
   "website_id": "devops-promptugal-cl-6"
  },
  "model": "sonnet",
- "state": "started: key, history and area done; push to live measured at about 11 minutes (finding written), median over 50 runs next",
+ "state": "started; first full pass of CI and automations done (site/findings/2026-11-26-ci-pass-21-to-26-nov.md); changed nothing on the website",
  "focus": "The site is out of date and feeds the newly approved iOS app: why pushes take about 10 minutes to go live (runs of 9 to 13 minutes on 25 to 26 Nov, against a median of 107 s on 8 Nov), and what is stale",
- "updated": "2026-11-26T02:27Z",
+ "updated": "2026-11-26T02:37Z",
  "timeline": [
+  {
+   "at": "2026-11-26T02:37Z",
+   "event": "full pass: 764 runs 21-25 Nov, 9 red (last 24 Nov), median 8.6 to 10.5 min against 12 min job timeouts; schedule.json stale; findings written"
+  },
   {
    "at": "2026-11-26T02:27Z",
    "event": "key added to the website's board/keys.json (devops-promptugal-cl-6); wake set by the conductor"
