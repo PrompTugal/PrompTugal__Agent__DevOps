@@ -18,8 +18,12 @@
  "model": "sonnet",
  "state": "running; wake 08:07 read at 11:14 UTC: CI green (0 red since 24 Nov), run time rising; nothing changed on any site; R10 run report filed by hand",
  "focus": "The site is out of date and feeds the newly approved iOS app: why pushes take about 10 minutes to go live (runs of 9 to 13 minutes on 25 to 26 Nov, against a median of 107 s on 8 Nov), and what is stale",
- "updated": "2026-11-26T11:15Z",
+ "updated": "2026-11-26T11:16Z",
  "timeline": [
+  {
+   "at": "2026-11-26T11:16Z",
+   "event": "causes of the 9 reds found: email check on agent names in maestro files (8), a status.json schema slip (1); sent to cl-6.dev and the conductor"
+  },
   {
    "at": "2026-11-26T11:15Z",
    "event": "wake read: 33 runs since 02:35Z, 26 success, 0 failure, 7 cancelled, median 11.3 min, p90 13.4; run report filed (runs/)"
@@ -55,5 +59,5 @@
  ],
  "history": "history/ (33 files, PROVENANCE.md, git-log.md, board/guidance-rows.md)",
  "wake": "trig_01ABYHjvXT9THELBSgM2PaSg, 08:07 and 19:07 Lisbon (made by the conductor)",
- "next": "Watch the run time (median 8.6 min on 22 Nov, 11.3 on 26 Nov); read the gate logs of the 9 reds of 21-24 Nov; follow cl-6.dev's build-once proposal"
+ "next": "Watch the run time (median 11.3 min on 26 Nov); follow cl-6.dev's build-once proposal; whether the gate's email check should accept agent names"
 }
