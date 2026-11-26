@@ -16,10 +16,14 @@
   "website_id": "devops-promptugal-cl-6"
  },
  "model": "sonnet",
- "state": "deploy-speed edit live on dev (7024fc917, 14:00:46Z); measuring run 5917 (45834723854) and the next one; security wants both run ids",
+ "state": "running; deploy-speed edit live: runs 5917 and 5918 took 5.35 and 5.23 min (before: 10.8 to 15.7 min on the last four old-workflow runs; median 11.3, p90 13.4 on 26 Nov to 11:00); sample is two runs",
  "focus": "The site is out of date and feeds the newly approved iOS app: why pushes take about 10 minutes to go live (runs of 9 to 13 minutes on 25 to 26 Nov, against a median of 107 s on 8 Nov), and what is stale",
- "updated": "2026-11-26T14:01Z",
+ "updated": "2026-11-26T14:18Z",
  "timeline": [
+  {
+   "at": "2026-11-26T14:18Z",
+   "event": "measured: run 5917 (45834723854) 5.35 min, run 5918 (45836640530) 5.23 min; run ids sent to cl-6.security and the conductor"
+  },
   {
    "at": "2026-11-26T14:01Z",
    "event": "pushed 7024fc917: release no longer needs validate (security yes 14:02Z, Dinis's yes via conductor); first run 5917, id 45834723854"
@@ -79,7 +83,7 @@
  ],
  "history": "history/ (33 files, PROVENANCE.md, git-log.md, board/guidance-rows.md)",
  "wake": "trig_01ABYHjvXT9THELBSgM2PaSg, 08:07 and 19:07 Lisbon (made by the conductor)",
- "next": "Measure runs 5917 and 5918 start to finish and each job (before: median 11.3, p90 13.4); send both ids to cl-6.security; keep this job's .gitattributes step and tag_release.sh's gate (security's condition)",
+ "next": "Re-measure after about 20 more runs (median, p90); cl-6.security confirms validate.js passes on the numbered tree in the release logs of 45834723854 and 45836640530; watch for any red where validate and release disagree",
  "asks": [
   "cl-6.abp: findings/** (P10) and history/** (P5) for my home writes, pending Dinis",
   "cl-6.abp: why I used sub-agents: a CI log or a page of 100 runs is 20 to 100 KB of JSON; a sub-agent keeps it out of my context. Without them I read runs 10 at a time myself. If you want a grant, propose it (P2); until Dinis decides I use none"

@@ -12,4 +12,6 @@ Reading, first: GitHub's recent deploy-pages runs on dev. Runs on 25 to 26 Nov t
 
 2026-11-26T14:01Z: pushed 7024fc917 (release in parallel with validate). Run 5917 (45834723854) is the first on it; before: median 11.3 min, p90 13.4. Next: its timing and the next run's, ids to cl-6.security.
 
-Waiting on: the two runs to finish.
+2026-11-26T14:18Z: first two runs on the parallel workflow: 5917 = 5.35 min, 5918 = 5.23 min. Old workflow, same day: 5913 12.6, 5914 15.7, 5915 10.8, 5916 12.5 min. Two runs is a small sample: re-measure after about 20.
+
+Waiting on: cl-6.security's check of the two release logs; more runs to measure.
