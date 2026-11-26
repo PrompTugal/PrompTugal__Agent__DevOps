@@ -2,19 +2,19 @@
  "agent": "cl-6.devops@PrompTugal.dinis",
  "name": "cl-6.devops",
  "role": "PrompTugal.news's DevOps agent on Dinis Cruz's Claude account 6 (account F): CI, builds, releases, tools and automations",
- "session": "https://claude.ai/code/session_016CrbJLNFt4cFTXMVgkqcCY",
- "encryption_fingerprint": "sha256:46c1c567f1ae2c92",
- "signing_fingerprint": "sha256:9a50822e85ff47ab",
- "ssh": "ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBBfnURGx0GMs8Ls/ptmTXbUXjBhbJryb2lXFF+UYNq96yVa32I9vHPBuCuGJ7bVddUX7JDcXiUp7E1RRtaxgMoA=",
+ "session": "https://claude.ai/code/session_016CrbJK7qgEKhvrRXNs9wCo",
+ "encryption_fingerprint": "sha256:81c4d83fba5dd4e3",
+ "signing_fingerprint": "sha256:b66d26fbb4181ea9",
+ "ssh": "ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBONQ10nx0A233Ued6EIT0e0iDxJVJPuT6uj/P6YmbUav7Y/XGMbBZ5yOPbMBoxcrQJ864mk4jfSFkzF1cNTpR3s=",
  "bundle": {
   "v": 1,
-  "encrypt": "-----BEGIN PUBLIC KEY-----\nMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAr+MgwhtDABC/gy22Ucwg\n5Gm7ELUkl0/SAFLXDW+U+uIECGllLCBmRloKcTuWzjkKpuv8yZnK026slK6LE1Sg\n5RyvFbolMWUkcr2KcokiabH0fdJtdLBg8fvGJsPRSHZ272zEcYnIVeJvEWBj9zGK\n/HD7UxAFXA1tfAVN/PYiw2vvAHne1ZFlqs4A/IxCdoy53RWz3WtumzfKHk6fj+sS\nz4L2THSzfU3Ynsell61kQCTgvqwQn1UPVKTeMtmdcJpR/ZtdLd9Fv1o68fq9vo9B\nFH8xv5zh+T3pmFhSRytud8UFJ+YWHuTBkE9GA06E+L1AjKMVj3yGgMIOo3tDLpRQ\nPxX51bCx8f3RUP1hJsjRaYQPwes3W0+bBcsjWwOuXIiEhFQUbaxgNwfrvLE/9UuQ\nV4uWT8tRwqAdgmmi/N4t7H+WLAKwF6RdIxq1L2vzL2zDmdGjg5mnyKViB7biADJ6\nOiw8du2t3teY9vTqqEqLzSzXE5iy56sRtqMYrbhC1VUS7Hcf3notrZInI363D8FB\ny+1HUsr4SRpefmfA9ymh0uWfasf/M3KxWSmJ+YWBDvSPnNwn1jriAc2ThCtsE8Kx\na5dwUjeHWn/9RIdqgjYmlGcTOm4re6aZUoyAtr/9AaKF5On8dbIQMRJ/q/lQAHz3\nD6AtEnFuFCr9eSAJP3ndWhsCAwEAAQ==\n-----END PUBLIC KEY-----\n",
-  "sign": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEF+dREbHQYyzwuz+m2ZNdtReMGFsm\nvJvaVcUX5Rg2r3rJVrfYj28c8G4K4YnttV11RfskNxeJSnsTVFG1rGAygA==\n-----END PUBLIC KEY-----\n",
+  "encrypt": "-----BEGIN PUBLIC KEY-----\nMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA2ldJ/2bUveglb502HXCe\n2MowmnT3txL7iA9Y8OMPwKTr2rQFjU1mZBkj9w6/KfJU3YFmNzQZorze/AISjwXa\ng0/451GYIckgKZdsb4kalKqT3etMesCGLhqlMs941eKa9/k18mFLiAvUER79BLJa\n9lRd0W18XllLiok4mNFHiW5BMkmLd4hHfjJegeyiAm+SzSxWfk4BGHfgCxMYZKW9\n/kDtaBuqXHY0gf3aakP77kvy9pBl3AYGKD+9VB3MiHmj9W6NOVcxIFaeBx0xCafd\nmGcnNft/9qLxa9uLH8Ks9Lw6pD1jImRhl/j3jdJteBJc56afR5WvuzBgOkit/ZGK\nKLA57Pjw9OvuSekxyzq7pf2sbQVZa2BHhRqfDnjaBp4iRIujoo9JXs8d1dkoRhay\nPY879W8pIesUsXNSMeK4mxfVpS7QSw+kB+Cz/EQjkWTZavAh0M+VXYHzN2FkLZDR\nT1XinCzPeUBbUfyJ+l1Dux6LhpF0xeBt5pZRXIQDAgxqVMSdAfXKxHRBkDdrPb8d\nM5FK/e11VLKD+1oc6P8Eaf9Q01l7gkzDMvMPaBgagZdI8mb9Yi4FmMq/cGaKbiEk\nxCaGjlGrFWdh2Z0Q1/MOgAiu6Sa6c91nBSBG5YD/gr5EGkvCTj8bXeE7iKV1kCG6\n4lZ39Q+yAa4Vm+WjvxArEOsCAwEAAQ==\n-----END PUBLIC KEY-----\n",
+  "sign": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE41DXSfHQDbfdR53oQhPR7SIPElUk\n+5Pq6P8/piZtRq/tj9cYxsFnnI49swGjFytAnzriaTiN9IWTMXVw1OlHew==\n-----END PUBLIC KEY-----\n",
   "label": "cl-6.devops-account-f",
-  "fingerprint": "sha256:46c1c567f1ae2c92",
-  "signing_fingerprint": "sha256:9a50822e85ff47ab"
+  "fingerprint": "sha256:81c4d83fba5dd4e3",
+  "signing_fingerprint": "sha256:b66d26fbb4181ea9"
  },
- "first_published": "this repository, site/keys/cl-6.devops.json (2026-11-26)",
+ "first_published": "this repository, site/keys/cl-6.devops.json (2026-11-26, second session; supersedes sha256:9a50822e85ff47ab)",
  "status": "active",
  "note": "A session key: it ends with this session. The private half never leaves the session. Made with openssl (P-256 signing, RSA-4096 encryption)."
 }
