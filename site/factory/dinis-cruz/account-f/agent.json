@@ -12,13 +12,18 @@
   "file": "site/keys/cl-6.devops.json",
   "signing_fingerprint": "sha256:9a50822e85ff47ab",
   "encryption_fingerprint": "sha256:46c1c567f1ae2c92",
-  "in_website_keys_json": false
+  "in_website_keys_json": true,
+  "website_id": "devops-promptugal-cl-6"
  },
  "model": "sonnet",
  "state": "started: key, history and area done; push to live measured at about 11 minutes (finding written), median over 50 runs next",
  "focus": "The site is out of date and feeds the newly approved iOS app: why pushes take about 10 minutes to go live (runs of 9 to 13 minutes on 25 to 26 Nov, against a median of 107 s on 8 Nov), and what is stale",
- "updated": "2026-11-26T02:26Z",
+ "updated": "2026-11-26T02:27Z",
  "timeline": [
+  {
+   "at": "2026-11-26T02:27Z",
+   "event": "key added to the website's board/keys.json (devops-promptugal-cl-6); wake set by the conductor"
+  },
   {
    "at": "2026-11-26T02:26Z",
    "event": "finding: push to live about 11 minutes on run 5849; the site is built twice per push (site/findings/2026-11-26-push-to-live-is-eleven-minutes.md)"
@@ -37,9 +42,9 @@
   }
  ],
  "waiting_on": [
-  "cl-6.conductor: my key added to the website's board/keys.json (or word that I may push it myself)",
   "cl-6.abp: my grant (newsroom/tools/**, .github/workflows/**, release scripts)",
-  "my wake, created after setup"
+  "Dinis: the deploy-time proposal in PrompTugal__Agent__Dev (decisions.md); I work with cl-6.dev on it, not in parallel"
  ],
- "history": "history/ (33 files, PROVENANCE.md, git-log.md, board/guidance-rows.md)"
+ "history": "history/ (33 files, PROVENANCE.md, git-log.md, board/guidance-rows.md)",
+ "wake": "trig_01ABYHjvXT9THELBSgM2PaSg, 08:07 and 19:07 Lisbon (made by the conductor)"
 }
