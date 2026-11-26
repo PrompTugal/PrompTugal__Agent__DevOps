@@ -16,10 +16,14 @@
   "website_id": "devops-promptugal-cl-6"
  },
  "model": "sonnet",
- "state": "running; wake 08:07 read at 11:14 UTC: CI green (0 red since 24 Nov), run time rising; nothing changed on any site; R10 run report filed by hand",
+ "state": "deploy-speed edit prepared (release parallel with validate), with cl-6.security for review before I push it; measure before 11.3 min median",
  "focus": "The site is out of date and feeds the newly approved iOS app: why pushes take about 10 minutes to go live (runs of 9 to 13 minutes on 25 to 26 Nov, against a median of 107 s on 8 Nov), and what is stale",
- "updated": "2026-11-26T11:18Z",
+ "updated": "2026-11-26T13:56Z",
  "timeline": [
+  {
+   "at": "2026-11-26T13:56Z",
+   "event": "Dinis's yes (via the conductor) to the deploy-speed proposal; patch review/2026-11-26-release-parallel-with-validate.patch sent to cl-6.security; I push after its review"
+  },
   {
    "at": "2026-11-26T11:18Z",
    "event": "cl-6.dev: the 8 email reds fixed in the gate (validate.js AGENT_NAME now accepts @account-a to @account-f.dinis, security reviewing); the 9th is maestro.c's own status.json. Deploy speed: cl-6.security's safe version (drop needs: from release) ready, waits on Dinis"
