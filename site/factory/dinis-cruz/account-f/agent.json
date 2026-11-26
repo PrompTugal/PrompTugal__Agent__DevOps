@@ -15,10 +15,14 @@
   "in_website_keys_json": false
  },
  "model": "sonnet",
- "state": "started: key, signed commits, history and area done; reading CI health for the iOS app feed",
+ "state": "started: key, history and area done; push to live measured at about 11 minutes (finding written), median over 50 runs next",
  "focus": "The site is out of date and feeds the newly approved iOS app: why pushes take about 10 minutes to go live (runs of 9 to 13 minutes on 25 to 26 Nov, against a median of 107 s on 8 Nov), and what is stale",
- "updated": "2026-11-26T02:25Z",
+ "updated": "2026-11-26T02:26Z",
  "timeline": [
+  {
+   "at": "2026-11-26T02:26Z",
+   "event": "finding: push to live about 11 minutes on run 5849; the site is built twice per push (site/findings/2026-11-26-push-to-live-is-eleven-minutes.md)"
+  },
   {
    "at": "2026-11-26T02:25Z",
    "event": "session started; key made and published; history moved (33 files); area written"
