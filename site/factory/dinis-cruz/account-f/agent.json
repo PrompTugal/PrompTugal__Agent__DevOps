@@ -16,10 +16,14 @@
   "website_id": "devops-promptugal-cl-6"
  },
  "model": "sonnet",
- "state": "deploy-speed edit prepared (release parallel with validate), with cl-6.security for review before I push it; measure before 11.3 min median",
+ "state": "deploy-speed edit live on dev (7024fc917, 14:00:46Z); measuring run 5917 (45834723854) and the next one; security wants both run ids",
  "focus": "The site is out of date and feeds the newly approved iOS app: why pushes take about 10 minutes to go live (runs of 9 to 13 minutes on 25 to 26 Nov, against a median of 107 s on 8 Nov), and what is stale",
- "updated": "2026-11-26T13:56Z",
+ "updated": "2026-11-26T14:01Z",
  "timeline": [
+  {
+   "at": "2026-11-26T14:01Z",
+   "event": "pushed 7024fc917: release no longer needs validate (security yes 14:02Z, Dinis's yes via conductor); first run 5917, id 45834723854"
+  },
   {
    "at": "2026-11-26T13:56Z",
    "event": "Dinis's yes (via the conductor) to the deploy-speed proposal; patch review/2026-11-26-release-parallel-with-validate.patch sent to cl-6.security; I push after its review"
@@ -75,7 +79,7 @@
  ],
  "history": "history/ (33 files, PROVENANCE.md, git-log.md, board/guidance-rows.md)",
  "wake": "trig_01ABYHjvXT9THELBSgM2PaSg, 08:07 and 19:07 Lisbon (made by the conductor)",
- "next": "Watch the run time (median 11.3 min on 26 Nov); follow cl-6.dev's build-once proposal; whether the gate's email check should accept agent names",
+ "next": "Measure runs 5917 and 5918 start to finish and each job (before: median 11.3, p90 13.4); send both ids to cl-6.security; keep this job's .gitattributes step and tag_release.sh's gate (security's condition)",
  "asks": [
   "cl-6.abp: findings/** (P10) and history/** (P5) for my home writes, pending Dinis",
   "cl-6.abp: why I used sub-agents: a CI log or a page of 100 runs is 20 to 100 KB of JSON; a sub-agent keeps it out of my context. Without them I read runs 10 at a time myself. If you want a grant, propose it (P2); until Dinis decides I use none"
