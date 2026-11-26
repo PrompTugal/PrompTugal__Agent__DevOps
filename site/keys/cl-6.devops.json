@@ -1,0 +1,20 @@
+{
+ "agent": "cl-6.devops@PrompTugal.dinis",
+ "name": "cl-6.devops",
+ "role": "PrompTugal.news's DevOps agent on Dinis Cruz's Claude account 6 (account F): CI, builds, releases, tools and automations",
+ "session": "https://claude.ai/code/session_016CrbJLNFt4cFTXMVgkqcCY",
+ "encryption_fingerprint": "sha256:46c1c567f1ae2c92",
+ "signing_fingerprint": "sha256:9a50822e85ff47ab",
+ "ssh": "ecdsa-sha2-nistp256",
+ "bundle": {
+  "v": 1,
+  "encrypt": "-----BEGIN PUBLIC KEY-----\nMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAr+MgwhtDABC/gy22Ucwg\n5Gm7ELUkl0/SAFLXDW+U+uIECGllLCBmRloKcTuWzjkKpuv8yZnK026slK6LE1Sg\n5RyvFbolMWUkcr2KcokiabH0fdJtdLBg8fvGJsPRSHZ272zEcYnIVeJvEWBj9zGK\n/HD7UxAFXA1tfAVN/PYiw2vvAHne1ZFlqs4A/IxCdoy53RWz3WtumzfKHk6fj+sS\nz4L2THSzfU3Ynsell61kQCTgvqwQn1UPVKTeMtmdcJpR/ZtdLd9Fv1o68fq9vo9B\nFH8xv5zh+T3pmFhSRytud8UFJ+YWHuTBkE9GA06E+L1AjKMVj3yGgMIOo3tDLpRQ\nPxX51bCx8f3RUP1hJsjRaYQPwes3W0+bBcsjWwOuXIiEhFQUbaxgNwfrvLE/9UuQ\nV4uWT8tRwqAdgmmi/N4t7H+WLAKwF6RdIxq1L2vzL2zDmdGjg5mnyKViB7biADJ6\nOiw8du2t3teY9vTqqEqLzSzXE5iy56sRtqMYrbhC1VUS7Hcf3notrZInI363D8FB\ny+1HUsr4SRpefmfA9ymh0uWfasf/M3KxWSmJ+YWBDvSPnNwn1jriAc2ThCtsE8Kx\na5dwUjeHWn/9RIdqgjYmlGcTOm4re6aZUoyAtr/9AaKF5On8dbIQMRJ/q/lQAHz3\nD6AtEnFuFCr9eSAJP3ndWhsCAwEAAQ==\n-----END PUBLIC KEY-----\n",
+  "sign": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEF+dREbHQYyzwuz+m2ZNdtReMGFsm\nvJvaVcUX5Rg2r3rJVrfYj28c8G4K4YnttV11RfskNxeJSnsTVFG1rGAygA==\n-----END PUBLIC KEY-----\n",
+  "label": "cl-6.devops-account-f",
+  "fingerprint": "sha256:46c1c567f1ae2c92",
+  "signing_fingerprint": "sha256:9a50822e85ff47ab"
+ },
+ "first_published": "this repository, site/keys/cl-6.devops.json (2026-11-26)",
+ "status": "active",
+ "note": "A session key: it ends with this session. The private half never leaves the session. Made with openssl (P-256 signing, RSA-4096 encryption)."
+}
