@@ -1,0 +1,200 @@
+{
+  "agent": "devops@PrompTugal.dinis",
+  "focus": "The health, quality and performance of CI, the release and tag scripts, every tool in newsroom/tools/ and every scheduled task of this site.",
+  "state": "running on account B (session e9df42b7); woken every two hours at :14 UTC",
+  "updated": "2026-11-08T00:25Z",
+  "done": [
+    "Session key made (pki-agent.mjs keygen --session, sha256 matching the team site's pin); public half in board/keys.json as devops-promptugal; my row in data/newsroom/agents.json",
+    "board/team/devops/ROLE.md and this status",
+    "Health report board/team/devops/health-2026-11-06.md: the last 50 runs (42 success, 7 cancelled, 0 failed; median 65 s push to deployed), the 03:21 to 03:32 stall explained (v0.1.87's Pages deploy stuck in syncing_files until the 10 minute job timeout; five pushes dropped meanwhile), three worst problems with fixes",
+    "Problem 1 fixed: the Pages deploy waits at most 4 minutes, a stuck deployment is cancelled and deployed once more, else the job fails red; release.sh says which half is late and never reads a cached llms.txt",
+    "The fix is live: v0.1.94 (run 129, the first on the new workflow, green in 107 s) carries it; a second stall (run 120, v0.1.93, 03:44 to 03:54) held the queue on the old workflow while I watched, eight runs dropped behind it, recorded in the report",
+    "Wake 04:15: the first fix's retry failed twice (runs 134 and 138: Pages names a deployment after the commit, so the same commit cannot be redeployed, and deploy-pages already cancels on timeout). Replaced: on a failed deploy the job asks the live site; if it serves the release, pass with a warning; if not, dispatch a fresh deploy of dev's head and fail red. Tested both paths locally. Report corrected (section 'Correction, 04:25 UTC')",
+    "board/schedule.json now matches the scheduler (15 rows, conductor@'s update): handoff closed",
+    "Wake 06:14: runs 147 to 206 read: 48 green, 5 red (all Pages stalls, each recovered by its dispatched deploy in 74 to 86 s), 6 dropped and ridden. The deploy now waits 2 minutes (was 4) and the live check 30 s (was 2 minutes; it never found the release live), the job timeout 6 minutes: a stall holds the queue about 3 minutes instead of 7",
+    "Wake 08:14: runs 206 to 234: 28 green, 1 Pages stall (run 208) recovered by its dispatched deploy, none dropped; median 68 s to live. CI now runs on work/** (the dotted workers' branches): the gate on the tip and on a test merge with dev, never a release; tried on work/dev.graphs",
+    "Wake 10:14: runs 234 to 289: 42 green, 8 red, 6 dropped. Two releases (v0.1.176, v0.1.188) were lost when GitHub refused the tag push after the branch had landed; tag_release.sh now pushes branch and tag atomically and retries a refused push (tested on a local copy). Three Pages stalls in a row, recovered by the dispatched redeploy. The workers' check flagged work/dev.pages's conflicts with dev",
+    "Wake 12:14: runs 290 to 362: 54 green, 4 red (3 Pages stalls, each recovered; work/dev.pages still conflicting), 6 dropped and ridden; every release since 10:40 tagged. Problem 3 closed (the build shows each release's commits). The domains: promptugal.com and .ai are on the registrar's parking address; options in board/team/devops/domains-2026-11-06.md",
+    "Wake 14:14: promptugal.news lagged on v0.1.261 from about 13:35 to 14:08; Pages stalled and refused deploys 'due to in progress deployment' at about one push a minute. A failed deploy is now tried once more after 45 s, and a red run dispatches only when its branch has not moved on. My inbox read (8 messages) with a read-only reader built on pki-agent.mjs, no install needed",
+    "Wake 16:14: the cause of the afternoon's lag found in run 527: Pages queued deployments and my 2 minute limit cancelled them while queued. Deploys now wait up to 8 minutes and a run superseded by a newer push skips its deploy. release.sh refuses to push during a hold (dev@'s ask). The domains decision page written: /newsroom/decisions/promptugal-com-and-ai/",
+    "Wake 18:14: 10 green runs in two hours, each mostly Pages' queue; a second deploy try only after a fast refusal (run 553 had held the queue 20 minutes); release.sh's 6 minute message says the release is done; the daily hand-over debrief written",
+    "Wake 20:14: nothing needed (27 of 28 runs green after dev@'s size cut, median 75 s to live); pushed nothing. 21:35: the final hand-over debrief, for the session on account B",
+    "Account B, 22:50: onboarded; new key devops-b-promptugal in board/keys.json (the account A key superseded); notes in board/team/devops/sessions/e9df42b7/; conductor.b@ and the conductor told on their inboxes. The GitHub Actions read tools work here. Runs 697 to 746 read: the 4 red on dev are Pages' queue past 8 minutes in the onboarding burst, each deployed by the next run, nothing lost (site on v0.1.369, the newest tag); median 100 s to live. Nothing changed in the workflow",
+    "Wake 00:14 (7 Nov): runs 747 to 800 read: dev 18 green, 3 red (Pages' queue in the burst, each deployed by the next run), median 82 s to live. The 5 red workers' runs (768 to 776) were all board/keys.json appends conflicting in the test merge with dev: release.sh --resolve-keys now merges a keys.json-only conflict by id (release.sh's rebase and the workflow's test merge), a real two-sided change still stops; tested on a clone",
+    "Wake 02:14 (7 Nov): runs 801 to 849: dev 22 green, 5 red (Pages' queue, each deployed by the next run), median 95 s; workers' branches 6 green, 0 red since the keys.json resolver. Inbox reissued as board/inboxes/devops-b.json: opened, vault cloned, drained (empty). The 7 November hand-over debrief written",
+    "Wake 04:14: runs 850 to 891: dev 24 green, 4 red (Pages' queue, each deployed by the next run), median 76 s, p90 155 s; workers' branches 7 green, 0 red. The red-on-stall question closed with no change: the live site was older in every case, and passing would make late releases silent. Inbox drained (empty)",
+    "Wake 06:14: runs 892 to 924: dev 16 green, 5 red, 2 dispatched redeploys green (the recovery path works); median 82 s. Pages still holds about 1 deploy in 5 past 8 minutes at a low push rate; the published tree has doubled to about 130 MB (479 images and PDFs since 18:00); sent to dev@ with the largest folders. Inbox drained (empty)",
+    "Wake 08:14: runs 925 to 959: dev 22 green, 2 red (both before 07:15), none since dev@'s 07:08 cut of board/'s unlinked images and PDFs from the deploy; median 77 s, p90 100 s; workers' branches 8 green. Tree about 121 MB (was 130). Inbox empty",
+    "Wake 10:14: runs 960 to 996: dev 26 green, 0 red; workers' 7 green; median 80 s. No Pages stall in three hours since dev@'s cut: the size thread closed. Inbox empty",
+    "Wake 12:14: runs 997 to 1040 at about 18 pushes an hour: dev 28 green, 2 red (Pages, each deployed by the next run), median 81 s, p90 110 s; workers' 7 green. Background level; nothing changed. Inbox empty",
+    "Wake 14:14: runs 1041 to 1084 all green (dev 31, workers' 9); median 86 s. Nothing changed. Inbox empty",
+    "Wake 16:14: runs 1085 to 1125: dev 26 green, 2 red back to back (Pages; the site held v0.1.561 about 20 minutes, then the next run deployed), median 90 s; workers' 8 green. Nothing changed. Inbox empty",
+    "Wake 18:14: runs 1126 to 1160 all green (dev 25, workers' 7); median 98 s. Nothing changed. Inbox empty",
+    "Wake 20:14: runs 1161 to 1198 all green (dev 27, workers' 9); median 100 s. The published tree doubled again to about 253 MB: 118 MB of investors@'s deck PDFs (four languages), and about 401 MB of deck versions committed to git today (pack 281 MB). Sent to investors@, dev@ and the conductor with options",
+    "Wake 22:14: runs 1199 to 1235: dev 26 green, 1 red (Pages, deployed by the next run); median 100 s, p90 151 s. No deck PDF committed since 20:14. Nothing changed. Inbox empty",
+    "Wake 00:14 (8 Nov): runs 1236 to 1280: dev 29 green, 0 red; median 107 s, p90 121 s. work/dev.graphs red on its own gate (live.json vs the manifest), told dev.graphs@. No deck PDF since 20:14. The 8 November hand-over debrief written"
+  ],
+  "next": [
+    "Watch: the deck PDFs and the tree's size; push-to-live time (median 107 s and rising)"
+  ],
+  "asks": [
+    "Dinis: conductor@ and security@ asked me for two tools in newsroom/tools/ (the inbox drain without the team site; the daily rotation of agent session keys). CLAUDE.md lists every tool in newsroom/tools/ as mine to keep healthy, but my ABP grant lets me write only release.sh there; may abp@ widen my grant to newsroom/tools/**, or should dev@ build them?",
+    "Dinis: promptugal.com and promptugal.ai still show the registrar's parking page; your choice of three ways to point them is on /newsroom/decisions/promptugal-com-and-ai/ (it needs your registrar or AWS account)"
+  ],
+  "handoffs": [
+    "dev.graphs@ (00:25 UTC, 8 November): work/dev.graphs red on the gate, api/v1/newsroom/live.json vs the manifest",
+    "investors@ and dev@ (20:30 UTC, 7 November, on their inboxes; conductor@ copied): deck PDFs are 118 MB of the deploy and about 401 MB in git today",
+    "dev@PrompTugal.dinis: problem 2 (a) and (b) in the health report: no-cache on in-page data fetches; a version badge that notices a newer live version",
+    "dev.pages@ and dev@: work/dev.pages conflicts with dev in assets/site.css and board/team/dev.pages/status.json (run 288)",
+    "customers@: thank you; the lag of 13:35 to 14:08 is explained and fixed in the health report (14:14 section)",
+    "dev@: the site's size (about 8,000 files, 61 MB) now sets how long every release takes to be live",
+    "conductor@: status-only and run-report commits could ride an agent's next content push rather than a release of their own"
+  ],
+  "wakes": [
+    {
+      "started": "2026-11-06T03:42Z",
+      "outcome": "ok",
+      "release": "v0.1.94 (my commits rode run 129 after run 120 stalled)",
+      "line": "First run: key, ROLE.md, status, the health report, the deploy retry and release.sh's message"
+    },
+    {
+      "started": "2026-11-06T04:15Z",
+      "outcome": "ok",
+      "release": "numbered by CI at push",
+      "line": "The deploy retry replaced by a live-site check and a dispatched fresh deploy; runs 129 to 142 read"
+    },
+    {
+      "started": "2026-11-06T06:14Z",
+      "outcome": "ok",
+      "release": "numbered by CI at push",
+      "line": "Recovery proven on 5 stalls; deploy wait 4 to 2 minutes, live check 2 minutes to 30 s"
+    },
+    {
+      "started": "2026-11-06T08:15Z",
+      "outcome": "partial",
+      "release": "numbered by CI at push",
+      "line": "CI for the workers' branches (gate and a test merge with dev); the inbox not drained (sgit-ai install refused)"
+    },
+    {
+      "started": "2026-11-06T10:15Z",
+      "outcome": "ok",
+      "release": "numbered by CI at push",
+      "line": "tag_release.sh: branch and tag pushed atomically, a refused push retried; runs 234 to 289 read"
+    },
+    {
+      "started": "2026-11-06T12:18Z",
+      "outcome": "ok",
+      "release": "numbered by CI at push",
+      "line": "CI healthy; the domains written up for Dinis; problem 3 closed"
+    },
+    {
+      "started": "2026-11-06T14:11Z",
+      "outcome": "ok",
+      "release": "numbered by CI at push",
+      "line": "Deploys refused under load: a 45 s retry, no dispatch when the branch has moved on; inbox read read-only"
+    },
+    {
+      "started": "2026-11-06T16:16Z",
+      "outcome": "ok",
+      "release": "numbered by CI at push",
+      "line": "Deploys wait for Pages' queue and superseded runs skip deploying; hold check in release.sh; the domains decision page"
+    },
+    {
+      "started": "2026-11-06T18:15Z",
+      "outcome": "ok",
+      "release": "numbered by CI at push",
+      "line": "No second deploy after a long queue; release.sh's message; the hand-over debrief"
+    },
+    {
+      "started": "2026-11-06T21:30Z",
+      "outcome": "ok",
+      "release": "numbered by CI at push",
+      "line": "Final hand-over debrief; the role moves to account B"
+    },
+    {
+      "started": "2026-11-06T22:45Z",
+      "outcome": "ok",
+      "release": "numbered by CI at push",
+      "line": "Account B onboarding: key, notes, inboxes told; runs 697 to 746 read, burst stalls only, nothing changed"
+    },
+    {
+      "started": "2026-11-07T00:14Z",
+      "outcome": "ok",
+      "release": "numbered by CI at push",
+      "line": "keys.json append conflicts merged by id in release.sh and the workers' test merge; runs 747 to 800 read"
+    },
+    {
+      "started": "2026-11-07T02:14Z",
+      "outcome": "ok",
+      "release": "numbered by CI at push",
+      "line": "Workers' runs green since the keys.json fix; inbox drained (empty); daily debrief"
+    },
+    {
+      "started": "2026-11-07T04:14Z",
+      "outcome": "ok",
+      "release": "numbered by CI at push",
+      "line": "Healthy (median 76 s); red-on-stall kept red, with the data; inbox empty"
+    },
+    {
+      "started": "2026-11-07T06:14Z",
+      "outcome": "ok",
+      "release": "numbered by CI at push",
+      "line": "Quiet hours still stall 1 in 5 deploys; the published tree has doubled, sent to dev@"
+    },
+    {
+      "started": "2026-11-07T08:14Z",
+      "outcome": "ok",
+      "release": "numbered by CI at push",
+      "line": "2 red (5 before); none since dev@'s cut of the deploy at 07:08; median 77 s"
+    },
+    {
+      "started": "2026-11-07T10:14Z",
+      "outcome": "ok",
+      "release": "numbered by CI at push",
+      "line": "0 red in two hours; the deploy size thread closed"
+    },
+    {
+      "started": "2026-11-07T12:14Z",
+      "outcome": "ok",
+      "release": "numbered by CI at push",
+      "line": "2 red in 36 at the busiest rate since the night; nothing changed"
+    },
+    {
+      "started": "2026-11-07T14:14Z",
+      "outcome": "ok",
+      "release": "numbered by CI at push",
+      "line": "All green; nothing changed"
+    },
+    {
+      "started": "2026-11-07T16:14Z",
+      "outcome": "ok",
+      "release": "numbered by CI at push",
+      "line": "2 red (Pages), background level; nothing changed"
+    },
+    {
+      "started": "2026-11-07T18:14Z",
+      "outcome": "ok",
+      "release": "numbered by CI at push",
+      "line": "All green; nothing changed"
+    },
+    {
+      "started": "2026-11-07T20:16Z",
+      "outcome": "ok",
+      "release": "numbered by CI at push",
+      "line": "All green; the tree doubled to 253 MB (investors' deck PDFs), sent to the owners"
+    },
+    {
+      "started": "2026-11-07T22:14Z",
+      "outcome": "ok",
+      "release": "numbered by CI at push",
+      "line": "1 red (Pages); deck PDFs not growing since 20:14"
+    },
+    {
+      "started": "2026-11-08T00:14Z",
+      "outcome": "ok",
+      "release": "numbered by CI at push",
+      "line": "dev all green; dev.graphs' gate finding sent; daily debrief"
+    }
+  ],
+  "latest_debrief": "board/team/devops/debriefs/2026-11-08-handover.md"
+}

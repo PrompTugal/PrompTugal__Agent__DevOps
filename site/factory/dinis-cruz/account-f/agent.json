@@ -1,0 +1,27 @@
+{
+ "name": "cl-6.devops@PrompTugal.dinis",
+ "owner": "dinis-cruz",
+ "account": "account-f",
+ "account_id": "cl-6",
+ "role": "the health, quality and performance of CI (`.github/workflows/`), the release and tag scripts, every tool in `newsroom/tools/` and every automation and scheduled task of this site: failures, slow steps, flaky runs, cancelled deploys, a page served stale",
+ "session": null,
+ "started_by": "cl-6.conductor@PrompTugal.dinis, at Dinis's word (26 Nov 2026: \"start all the agents here and give them a new home\")",
+ "home": "PrompTugal/PrompTugal__Agent__DevOps",
+ "work": "PrompTugal/PrompTugal__News__Website",
+ "key": null,
+ "model": "sonnet",
+ "state": "seeded, not started: runs as a sub-agent of cl-6.conductor until it has a session of its own",
+ "focus": "Watch: the deck PDFs and the tree's size; push-to-live time (median 107 s and rising)",
+ "updated": "2026-11-26T01:28Z",
+ "timeline": [
+  {
+   "at": "2026-11-26T01:28Z",
+   "event": "home seeded from PrompTugal__News__Website board/team/devops"
+  },
+  {
+   "at": "2026-11-08T00:25Z",
+   "event": "last status update of the source folder devops"
+  }
+ ],
+ "waiting_on": []
+}
