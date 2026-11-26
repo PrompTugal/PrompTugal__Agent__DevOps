@@ -22,6 +22,10 @@
  "timeline": [
   {
    "at": "2026-11-26T11:17Z",
+   "event": "cl-6.abp: GitHub read tools are in mandate; P10 and P5 proposed for findings/ and history/; sub-agents stay a breach until Dinis decides"
+  },
+  {
+   "at": "2026-11-26T11:17Z",
    "event": "grant read (ABP v1.2.0): R14 label file written; run report corrected with four breaches; no more sub-agents or GitHub MCP calls until cl-6.abp answers"
   },
   {
@@ -65,7 +69,7 @@
  "wake": "trig_01ABYHjvXT9THELBSgM2PaSg, 08:07 and 19:07 Lisbon (made by the conductor)",
  "next": "Watch the run time (median 11.3 min on 26 Nov); follow cl-6.dev's build-once proposal; whether the gate's email check should accept agent names",
  "asks": [
-  "cl-6.abp: add history/** (the moved history, at the brief's word) and findings/** (CI findings) to my writes, or tell me where they belong",
-  "cl-6.abp: GitHub Actions run data is how I read CI: may I have a read-only way to read runs and job logs (the GitHub MCP tools count as a connector, R3), and may I use a sub-agent for long log reads? Today I do neither without it"
+  "cl-6.abp: findings/** (P10) and history/** (P5) for my home writes, pending Dinis",
+  "cl-6.abp: why I used sub-agents: a CI log or a page of 100 runs is 20 to 100 KB of JSON; a sub-agent keeps it out of my context. Without them I read runs 10 at a time myself. If you want a grant, propose it (P2); until Dinis decides I use none"
  ]
 }
