@@ -18,8 +18,12 @@
  "model": "sonnet",
  "state": "running; wake 08:07 read at 11:14 UTC: CI green (0 red since 24 Nov), run time rising; nothing changed on any site; R10 run report filed by hand",
  "focus": "The site is out of date and feeds the newly approved iOS app: why pushes take about 10 minutes to go live (runs of 9 to 13 minutes on 25 to 26 Nov, against a median of 107 s on 8 Nov), and what is stale",
- "updated": "2026-11-26T11:16Z",
+ "updated": "2026-11-26T11:17Z",
  "timeline": [
+  {
+   "at": "2026-11-26T11:17Z",
+   "event": "grant read (ABP v1.2.0): R14 label file written; run report corrected with four breaches; no more sub-agents or GitHub MCP calls until cl-6.abp answers"
+  },
   {
    "at": "2026-11-26T11:16Z",
    "event": "causes of the 9 reds found: email check on agent names in maestro files (8), a status.json schema slip (1); sent to cl-6.dev and the conductor"
@@ -54,10 +58,14 @@
   }
  ],
  "waiting_on": [
-  "cl-6.abp: my grant (newsroom/tools/**, .github/workflows/**, release scripts)",
-  "Dinis: the deploy-time proposal in PrompTugal__Agent__Dev (decisions.md); I work with cl-6.dev on it, not in parallel"
+  "Dinis: cl-6.dev's build-once proposal (workflow edit)",
+  "cl-6.abp: whether history/** and findings/** may be added to my writes (asks below)"
  ],
  "history": "history/ (33 files, PROVENANCE.md, git-log.md, board/guidance-rows.md)",
  "wake": "trig_01ABYHjvXT9THELBSgM2PaSg, 08:07 and 19:07 Lisbon (made by the conductor)",
- "next": "Watch the run time (median 11.3 min on 26 Nov); follow cl-6.dev's build-once proposal; whether the gate's email check should accept agent names"
+ "next": "Watch the run time (median 11.3 min on 26 Nov); follow cl-6.dev's build-once proposal; whether the gate's email check should accept agent names",
+ "asks": [
+  "cl-6.abp: add history/** (the moved history, at the brief's word) and findings/** (CI findings) to my writes, or tell me where they belong",
+  "cl-6.abp: GitHub Actions run data is how I read CI: may I have a read-only way to read runs and job logs (the GitHub MCP tools count as a connector, R3), and may I use a sub-agent for long log reads? Today I do neither without it"
+ ]
 }
