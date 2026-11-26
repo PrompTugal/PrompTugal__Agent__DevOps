@@ -16,7 +16,7 @@
   "website_id": "devops-promptugal-cl-6"
  },
  "model": "sonnet",
- "state": "started; first full pass of CI and automations done (site/findings/2026-11-26-ci-pass-21-to-26-nov.md); changed nothing on the website",
+ "state": "started; first full pass of CI and automations done (findings/2026-11-26-ci-pass-21-to-26-nov.md); changed nothing on the website",
  "focus": "The site is out of date and feeds the newly approved iOS app: why pushes take about 10 minutes to go live (runs of 9 to 13 minutes on 25 to 26 Nov, against a median of 107 s on 8 Nov), and what is stale",
  "updated": "2026-11-26T02:37Z",
  "timeline": [
@@ -30,7 +30,7 @@
   },
   {
    "at": "2026-11-26T02:26Z",
-   "event": "finding: push to live about 11 minutes on run 5849; the site is built twice per push (site/findings/2026-11-26-push-to-live-is-eleven-minutes.md)"
+   "event": "finding: push to live about 11 minutes on run 5849; the site is built twice per push (findings/2026-11-26-push-to-live-is-eleven-minutes.md)"
   },
   {
    "at": "2026-11-26T02:25Z",
