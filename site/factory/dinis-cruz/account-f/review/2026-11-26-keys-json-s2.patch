@@ -1,0 +1,72 @@
+From b1a90dc713d1459b9905c1f441c6cf96fbd419b2 Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Thu, 26 Nov 2026 16:57:21 +0000
+Subject: [PATCH] cl-6.devops@PrompTugal.dinis: board/keys.json: new session
+ key devops-promptugal-cl-6-s2 (sha256:b66d26fbb4181ea9);
+ devops-promptugal-cl-6 marked superseded
+
+Agent: cl-6.devops@PrompTugal.dinis
+Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_016CrbJK7qgEKhvrRXNs9wCo
+---
+ board/keys.json | 30 ++++++++++++++++++++++++++++--
+ 1 file changed, 28 insertions(+), 2 deletions(-)
+
+diff --git a/board/keys.json b/board/keys.json
+index 425be0355..8124227e4 100644
+--- a/board/keys.json
++++ b/board/keys.json
+@@ -5247,7 +5247,7 @@
+       "made": "2026-11-26",
+       "made_with": "openssl (P-256 signing key, RSA-4096 encryption key), in its own session; private halves only in that session",
+       "added": "2026-11-26T02:27Z",
+-      "status": "active",
++      "status": "superseded",
+       "session": "https://claude.ai/code/session_016CrbJLNFt4cFTXMVgkqcCY",
+       "encryption_fingerprint": "sha256:46c1c567f1ae2c92",
+       "signing_fingerprint": "sha256:9a50822e85ff47ab",
+@@ -5261,7 +5261,9 @@
+       },
+       "ssh": "ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBBfnURGx0GMs8Ls/ptmTXbUXjBhbJryb2lXFF+UYNq96yVa32I9vHPBuCuGJ7bVddUX7JDcXiUp7E1RRtaxgMoA=",
+       "ssh_added": "2026-11-26T02:27Z",
+-      "home_copy": "https://github.com/PrompTugal/PrompTugal__Agent__DevOps/blob/dev/site/keys/cl-6.devops.json"
++      "home_copy": "https://github.com/PrompTugal/PrompTugal__Agent__DevOps/blob/dev/site/keys/cl-6.devops.json",
++      "superseded": "2026-11-26T16:57Z by devops-promptugal-cl-6-s2 (second session of cl-6.devops, replaces session_016CrbJLNFt4cFTXMVgkqcCY)",
++      "superseded_in": "4352035 (PrompTugal__Agent__DevOps)"
+     },
+     {
+       "id": "telemetry-promptugal-cl-6",
+@@ -5608,6 +5610,30 @@
+       "ssh": "ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBECqaTmIqLHalgW4kfIr27ceK1hCkrv0m2ELdy+i1Vla5N+Yqagh4+QyRgSesqJJH1XqDLSkaMrUGpOKp+2f/us=",
+       "ssh_added": "2026-11-26T11:14Z",
+       "home_copy": "https://github.com/PrompTugal/PrompTugal__Agent__Synthetic/blob/dev/site/keys/cl-6.synthetic.json"
++    },
++    {
++      "id": "devops-promptugal-cl-6-s2",
++      "agent": "cl-6.devops@PrompTugal.dinis",
++      "label": "cl-6.devops@PrompTugal.dinis: the DevOps agent of PrompTugal.news, on Dinis's Claude account 6 (account F), second session",
++      "role": "The health, quality and performance of CI, the release and tag scripts, every tool in newsroom/tools/ and every automation of this site. Started 26 November 2026 by cl-6.maestro, for cl-6.conductor. A session key: it ends with its session.",
++      "made": "2026-11-26",
++      "made_with": "openssl (P-256 signing key, RSA-4096 encryption key), in its own session; private halves only in that session",
++      "added": "2026-11-26T16:57Z",
++      "status": "active",
++      "session": "https://claude.ai/code/session_016CrbJK7qgEKhvrRXNs9wCo",
++      "encryption_fingerprint": "sha256:81c4d83fba5dd4e3",
++      "signing_fingerprint": "sha256:b66d26fbb4181ea9",
++      "bundle": {
++        "v": 1,
++        "encrypt": "-----BEGIN PUBLIC KEY-----\nMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA2ldJ/2bUveglb502HXCe\n2MowmnT3txL7iA9Y8OMPwKTr2rQFjU1mZBkj9w6/KfJU3YFmNzQZorze/AISjwXa\ng0/451GYIckgKZdsb4kalKqT3etMesCGLhqlMs941eKa9/k18mFLiAvUER79BLJa\n9lRd0W18XllLiok4mNFHiW5BMkmLd4hHfjJegeyiAm+SzSxWfk4BGHfgCxMYZKW9\n/kDtaBuqXHY0gf3aakP77kvy9pBl3AYGKD+9VB3MiHmj9W6NOVcxIFaeBx0xCafd\nmGcnNft/9qLxa9uLH8Ks9Lw6pD1jImRhl/j3jdJteBJc56afR5WvuzBgOkit/ZGK\nKLA57Pjw9OvuSekxyzq7pf2sbQVZa2BHhRqfDnjaBp4iRIujoo9JXs8d1dkoRhay\nPY879W8pIesUsXNSMeK4mxfVpS7QSw+kB+Cz/EQjkWTZavAh0M+VXYHzN2FkLZDR\nT1XinCzPeUBbUfyJ+l1Dux6LhpF0xeBt5pZRXIQDAgxqVMSdAfXKxHRBkDdrPb8d\nM5FK/e11VLKD+1oc6P8Eaf9Q01l7gkzDMvMPaBgagZdI8mb9Yi4FmMq/cGaKbiEk\nxCaGjlGrFWdh2Z0Q1/MOgAiu6Sa6c91nBSBG5YD/gr5EGkvCTj8bXeE7iKV1kCG6\n4lZ39Q+yAa4Vm+WjvxArEOsCAwEAAQ==\n-----END PUBLIC KEY-----\n",
++        "sign": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE41DXSfHQDbfdR53oQhPR7SIPElUk\n+5Pq6P8/piZtRq/tj9cYxsFnnI49swGjFytAnzriaTiN9IWTMXVw1OlHew==\n-----END PUBLIC KEY-----\n",
++        "label": "cl-6.devops-account-f",
++        "fingerprint": "sha256:81c4d83fba5dd4e3",
++        "signing_fingerprint": "sha256:b66d26fbb4181ea9"
++      },
++      "ssh": "ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBONQ10nx0A233Ued6EIT0e0iDxJVJPuT6uj/P6YmbUav7Y/XGMbBZ5yOPbMBoxcrQJ864mk4jfSFkzF1cNTpR3s=",
++      "ssh_added": "2026-11-26T16:57Z",
++      "home_copy": "https://github.com/PrompTugal/PrompTugal__Agent__DevOps/blob/dev/site/keys/cl-6.devops.json"
+     }
+   ]
+ }
+-- 
+2.43.0
+
