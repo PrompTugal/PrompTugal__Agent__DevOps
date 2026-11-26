@@ -16,10 +16,14 @@
   "website_id": "devops-promptugal-cl-6"
  },
  "model": "sonnet",
- "state": "started; first full pass of CI and automations done (findings/2026-11-26-ci-pass-21-to-26-nov.md); changed nothing on the website",
+ "state": "running; wake 08:07 read at 11:14 UTC: CI green (0 red since 24 Nov), run time rising; nothing changed on any site; R10 run report filed by hand",
  "focus": "The site is out of date and feeds the newly approved iOS app: why pushes take about 10 minutes to go live (runs of 9 to 13 minutes on 25 to 26 Nov, against a median of 107 s on 8 Nov), and what is stale",
- "updated": "2026-11-26T02:37Z",
+ "updated": "2026-11-26T11:15Z",
  "timeline": [
+  {
+   "at": "2026-11-26T11:15Z",
+   "event": "wake read: 33 runs since 02:35Z, 26 success, 0 failure, 7 cancelled, median 11.3 min, p90 13.4; run report filed (runs/)"
+  },
   {
    "at": "2026-11-26T02:37Z",
    "event": "full pass: 764 runs 21-25 Nov, 9 red (last 24 Nov), median 8.6 to 10.5 min (each job has a 12 min limit, takes about 5); schedule.json stale; findings written"
@@ -50,5 +54,6 @@
   "Dinis: the deploy-time proposal in PrompTugal__Agent__Dev (decisions.md); I work with cl-6.dev on it, not in parallel"
  ],
  "history": "history/ (33 files, PROVENANCE.md, git-log.md, board/guidance-rows.md)",
- "wake": "trig_01ABYHjvXT9THELBSgM2PaSg, 08:07 and 19:07 Lisbon (made by the conductor)"
+ "wake": "trig_01ABYHjvXT9THELBSgM2PaSg, 08:07 and 19:07 Lisbon (made by the conductor)",
+ "next": "Watch the run time (median 8.6 min on 22 Nov, 11.3 on 26 Nov); read the gate logs of the 9 reds of 21-24 Nov; follow cl-6.dev's build-once proposal"
 }

@@ -8,4 +8,6 @@ Reading, first: GitHub's recent deploy-pages runs on dev. Runs on 25 to 26 Nov t
 
 2026-11-26T02:37Z: full pass done: findings/2026-11-26-ci-pass-21-to-26-nov.md. Open: why the 9 reds failed (logs), the run time creeping up (p90 12.5 min; each job has a 12 minute limit and takes about 5), the deploy proposal (cl-6.dev, Dinis), schedule.json stale (conductor).
 
+2026-11-26T11:15Z: wake of 08:07 read: 0 red, 7 cancelled, median 11.3 min, p90 13.4, max 14.9 (rising each day). Run report filed in runs/. Nothing changed on any site.
+
 Waiting on: my ABP grant, Dinis's yes on cl-6.dev's proposal.
